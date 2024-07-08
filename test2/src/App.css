@@ -1,10 +1,43 @@
 .App {
+  
   text-align: center;
 }
+.body{
+  border: 2px solid black;
+  margin: 0;
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_pMN7P-3i_ktGvNTwagxqaLpXqxwvRDocPQ&s); */
+  /* background-repeat: repeat-y; */
+  /* background-size: cover; */
+  height: 3310px;
+width: 100%;
+color: Red;
+background-color: wheat;
 
-.App-logo {
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
+} */
+.img{
+  width: 250px;
+  height: 200px;
+
+}
+
+.img:hover{
+  cursor: pointer;
+  
+}
+.b-1{
+  color: green;
+  /* border: 1px solid black; */
+  width:20%;
+  height: 300px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,5 +67,71 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+#search p:nth-child(1){
+
+  margin-left: 630px ;
+}
+.body h1{
+
+  margin-left: 650px ;
+}
+
+#search button{
+  
+    margin-left: 20px;
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    /* margin: 0; */
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-1:hover,
+  .button-1:focus {
+    background-color: #F082AC;
+  }
+
+
+
+  #textfield{
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 4px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  :focus{
+      color: #212529;
+      background-color: #fff;
+      border-color: #86b7fe;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
   }
 }
